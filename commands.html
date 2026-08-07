@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命令 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:900px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:20px;color:#e94560;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content p{line-height:1.8;margin-bottom:10px;color:#555}
+.quote-block{background:#fff;border-left:4px solid #e94560;padding:14px 18px;margin:16px 0;border-radius:0 6px 6px 0;box-shadow:0 2px 6px rgba(0,0,0,.04);font-style:italic;color:#888}
+.cmd-card{background:#fff;border-radius:8px;padding:20px;margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.cmd-card h3{font-size:16px;color:#e94560;font-family:"Courier New",monospace;margin-bottom:6px}
+.cmd-card p{font-size:14px;margin:4px 0;color:#555}
+.cmd-card .usage{font-size:13px;color:#999;font-family:"Courier New",monospace;background:#f8f9fc;padding:6px 10px;border-radius:4px;display:inline-block;margin-top:4px}
+.note{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:12px 16px;margin:16px 0;font-size:13px;color:#856404}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html">物品</a>
+    <a href="mobs.html">生物</a>
+    <a href="achievements.html">成就</a>
+    <a href="tutorial.html">教程</a>
+    <a href="commands.html" class="active">命令</a>
+    <a href="biomes.html">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>命令</h1>
+  <div class="quote-block">"CHESTS IN THE MAPS 最神奇的咒语。" —— hezhibao</div>
+
+  <div class="note">此页面仅适用于 C++ Edition。命令（Command）是要开启作弊从而修改游戏数据或开发的工具，目前有 7 种命令（含 1 个彩蛋）。</div>
+
+  <h2>C++ Edition 命令</h2>
+  <div class="cmd-card"><h3>/kill</h3><p>杀死指定生物</p><span class="usage">/kill &lt;mob&gt; &lt;id/all&gt;</span></div>
+  <div class="cmd-card"><h3>/tp</h3><p>传送玩家</p><span class="usage">/tp &lt;x&gt; &lt;y&gt;</span></div>
+  <div class="cmd-card"><h3>/give</h3><p>给予物品</p><span class="usage">/give &lt;item&gt; &lt;count&gt;</span></div>
+  <div class="cmd-card"><h3>/gamerule</h3><p>设置规则</p><span class="usage">/gamerule &lt;rule&gt; &lt;value&gt;</span></div>
+  <div class="cmd-card"><h3>/setblock</h3><p>更改方块</p><span class="usage">/setblock &lt;dimension&gt; &lt;x&gt; &lt;y&gt; &lt;block&gt;</span></div>
+  <div class="cmd-card"><h3>/gamemode</h3><p>设置游戏模式</p><span class="usage">/gamemode &lt;mode&gt;</span></div>
+  <div class="cmd-card"><h3>/help</h3><p>帮助</p><span class="usage">/help</span></div>
+
+  <h2>Canary Version 命令</h2>
+  <div class="note" style="background:#e8f4fd;border-color:#2196F3;color:#0d47a1">此页面仅适用于 Canary Version。</div>
+  <div class="cmd-card"><h3>give</h3><p>给予物品</p><span class="usage">give &lt;物品&gt; &lt;数量&gt;</span></div>
+  <div class="cmd-card"><h3>money</h3><p>设置金钱</p><span class="usage">money &lt;数量&gt;</span></div>
+  <div class="cmd-card"><h3>hp</h3><p>设置生命值</p><span class="usage">hp &lt;数量&gt;</span></div>
+  <div class="cmd-card"><h3>hunger</h3><p>设置饱食度</p><span class="usage">hunger &lt;数量&gt;</span></div>
+  <div class="cmd-card"><h3>tp</h3><p>传送到坐标</p><span class="usage">tp &lt;x&gt; &lt;y&gt;</span></div>
+  <div class="cmd-card"><h3>kill</h3><p>杀死周围所有怪物</p><span class="usage">kill</span></div>
+  <div class="cmd-card"><h3>clear</h3><p>清空背包</p><span class="usage">clear</span></div>
+  <div class="cmd-card"><h3>god</h3><p>切换无敌模式</p><span class="usage">god</span></div>
+  <div class="cmd-card"><h3>nether</h3><p>切换下界</p><span class="usage">nether</span></div>
+  <div class="cmd-card"><h3>help</h3><p>显示此帮助</p><span class="usage">help</span></div>
+</main>
+</body>
+</html>

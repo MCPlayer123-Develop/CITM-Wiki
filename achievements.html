@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成就 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:900px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:20px;color:#e94560;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content p{line-height:1.8;margin-bottom:10px;color:#555}
+.ach-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.ach-card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);display:flex;align-items:center;gap:14px}
+.ach-card .ach-icon{font-size:32px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:#f0f0f5;border-radius:8px;font-weight:bold;color:#e94560}
+.ach-card .ach-info h4{font-size:15px;color:#1a1a2e;margin-bottom:4px}
+.ach-card .ach-info p{font-size:13px;color:#777;margin:0}
+.ver-tag{display:inline-block;background:#1a1a2e;color:#fff;font-size:11px;padding:2px 8px;border-radius:3px}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html">物品</a>
+    <a href="mobs.html">生物</a>
+    <a href="achievements.html" class="active">成就</a>
+    <a href="tutorial.html">教程</a>
+    <a href="commands.html">命令</a>
+    <a href="biomes.html">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>成就（进度）</h1>
+  <p>成就（Progress）<span class="ver-tag">C++ Edition: Alpha 0.8.2</span> 是要求玩家完成特定事件所获得。</p>
+
+  <h2>主世界成就</h2>
+  <div class="ach-grid">
+    <div class="ach-card">
+      <div class="ach-icon">Z</div>
+      <div class="ach-info"><h4>小小怪物，轻松拿捏</h4><p>击杀任意一只怪物</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">S</div>
+      <div class="ach-info"><h4>远处有个狙击手</h4><p>让骷髅的箭射中你</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">C</div>
+      <div class="ach-info"><h4>这是什么？箱子！</h4><p>打开一个箱子</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">D</div>
+      <div class="ach-info"><h4>抵达终点</h4><p>到达终点</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">Y</div>
+      <div class="ach-info"><h4>哦，不！</h4><p>死亡一次</p></div>
+    </div>
+  </div>
+
+  <h2>下界成就</h2>
+  <div class="ach-grid">
+    <div class="ach-card">
+      <div class="ach-icon">D</div>
+      <div class="ach-info"><h4>准备去新的维度</h4><p>激活下界传送门</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon" style="color:#555">—</div>
+      <div class="ach-info"><h4>勇闯下界</h4><p>进入下界</p></div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">B</div>
+      <div class="ach-info"><h4>与火共舞</h4><p>获取末地钥匙</p></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

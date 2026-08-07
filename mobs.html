@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:1000px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:20px;color:#e94560;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content h3{font-size:16px;margin:16px 0 8px;color:#1a1a2e}
+.content p{line-height:1.8;margin-bottom:10px}
+.mob-card{background:#fff;border-radius:8px;padding:24px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #e94560}
+.mob-card.alt{border-left-color:#e94560}
+.mob-card .quote{font-style:italic;color:#888;font-size:14px;margin-bottom:14px;padding:10px;background:#f8f9fc;border-radius:4px}
+.mob-card .stat{display:inline-block;margin-right:20px;font-size:14px}
+.mob-card .stat strong{color:#1a1a2e}
+.mob-card .label{font-size:12px;color:#999}
+.prop-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+.prop-table th{background:#1a1a2e;color:#fff;padding:8px 12px;text-align:left;font-weight:normal}
+.prop-table td{padding:8px 12px;border-bottom:1px solid #eee;background:#fff}
+.range-grid{display:inline-grid;grid-template-columns:repeat(3,48px);gap:4px;font-size:12px;text-align:center;margin:8px 0}
+.range-grid .g{background:#d4edda;padding:4px}
+.range-grid .r{background:#f8d7da;padding:4px}
+.ver-tag{display:inline-block;background:#e94560;color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;margin-right:4px}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html">物品</a>
+    <a href="mobs.html" class="active">生物</a>
+    <a href="achievements.html">成就</a>
+    <a href="tutorial.html">教程</a>
+    <a href="commands.html">命令</a>
+    <a href="biomes.html">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>生物</h1>
+  <p>生物（Mobs）是本游戏的重要组成部分之一，分为敌对生物和友好生物（目前未加入，后续加入）。</p>
+
+  <!-- 僵尸 -->
+  <div class="mob-card">
+    <h2>[Z] 僵尸</h2>
+    <div class="quote">"这是首个 CHESTS IN THE MAPS 的敌对生物，这意味着玩家们有更大的挑战了。" —— hezhibao</div>
+    <p><span class="stat"><strong>血量：</strong>3</span><span class="stat"><strong>伤害：</strong>2</span><span class="stat"><strong>类型：</strong>敌对生物</span></p>
+    <p class="label">命名空间名：chest:zombie</p>
+    <p style="margin-top:8px">喷溅型伤害药水会瞬间杀死它。</p>
+    <h3>攻击范围</h3>
+    <div class="range-grid">
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+      <div class="g">可攻击</div><div class="g">[Z]</div><div class="g">可攻击</div>
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+    </div>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody><tr><td>腐肉</td><td>80%</td><td>0~4</td></tr></tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody>
+      <tr><td>Alpha 0.5.1</td><td>加入僵尸 [Z]。</td></tr>
+      <tr><td>Alpha 0.6.5</td><td>攻击范围调整：四周均可攻击。</td></tr>
+    </tbody></table>
+  </div>
+
+  <!-- 骷髅 -->
+  <div class="mob-card">
+    <h2>[S] 骷髅</h2>
+    <div class="quote">"远战时期来临了！" —— hezhibao</div>
+    <p><span class="stat"><strong>血量：</strong>3</span><span class="stat"><strong>伤害：</strong>箭矢 2 / 近战 2</span><span class="stat"><strong>类型：</strong>敌对生物</span></p>
+    <p class="label">命名空间名：chest:skeleton</p>
+    <h3>射箭范围</h3>
+    <div class="range-grid">
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+      <div class="g">可</div><div class="g">[S]</div><div class="g">可</div>
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+    </div>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody><tr><td>骨头</td><td>75%</td><td>0~3</td></tr></tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody>
+      <tr><td>Alpha 0.6.4</td><td>加入骷髅 [S]。</td></tr>
+      <tr><td>Alpha 0.6.5</td><td>更新骷髅射箭。</td></tr>
+      <tr><td>Alpha 0.7.2</td><td>修复箭矢碰到墙就卡死的 Bug（地图数组越界）。</td></tr>
+      <tr><td>Alpha 0.7.3</td><td>更新骷髅射出的箭矢能攻击僵尸和骷髅。</td></tr>
+    </tbody></table>
+  </div>
+
+  <!-- 熔岩僵尸 -->
+  <div class="mob-card">
+    <h2>[Z] 熔岩僵尸</h2>
+    <div class="quote">"来源于恐怖下界的怪物，非常难打，对玩家是个新挑战。" —— hezhibao<br>"惊悚恐怖 Lava Zombie 款（皮肤），哈哈哈哈。" —— ZycNotFound</div>
+    <p><span class="stat"><strong>血量：</strong>5</span><span class="stat"><strong>伤害：</strong>2</span><span class="stat"><strong>类型：</strong>敌对生物</span></p>
+    <p class="label">命名空间名：chest:lava_zombie</p>
+    <h3>攻击范围</h3>
+    <div class="range-grid">
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+      <div class="g">可攻击</div><div class="g">[Z]</div><div class="g">可攻击</div>
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+    </div>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody>
+      <tr><td>腐肉</td><td>80%</td><td>0~4</td></tr>
+      <tr><td>金锭</td><td>50%</td><td>0~1</td></tr>
+    </tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody>
+      <tr><td>Alpha 0.8.1</td><td>加入熔岩僵尸 [Z]。</td></tr>
+      <tr><td>Alpha 0.8.2</td><td>修复熔岩僵尸移动会覆盖下界岩的 Bug。</td></tr>
+    </tbody></table>
+  </div>
+
+  <!-- 燃烧骷髅 -->
+  <div class="mob-card">
+    <h2>[S] 燃烧骷髅 <span class="ver-tag">Alpha 0.8.2</span></h2>
+    <div class="quote">"下界的远战生物，燃起来了。" —— hezhibao</div>
+    <p><span class="stat"><strong>血量：</strong>5</span><span class="stat"><strong>伤害：</strong>箭矢持续燃烧 3 游戏刻 / 近战持续燃烧 3 游戏刻</span><span class="stat"><strong>类型：</strong>敌对生物</span></p>
+    <p class="label">命名空间名：chest:burn_skeleton</p>
+    <h3>射箭范围</h3>
+    <div class="range-grid">
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+      <div class="g">可</div><div class="g">[S]</div><div class="g">可</div>
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+    </div>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody>
+      <tr><td>骨头</td><td>80%</td><td>0~4</td></tr>
+      <tr><td>打火石</td><td>50%</td><td>0~1</td></tr>
+    </tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody><tr><td>Alpha 0.8.2</td><td>加入燃烧骷髅 [S]。</td></tr></tbody></table>
+  </div>
+
+  <!-- 烈焰人 -->
+  <div class="mob-card">
+    <h2>[B] 烈焰人 <span class="ver-tag">Alpha 0.8.3 新增</span></h2>
+    <div class="quote">"末地的钥匙。" —— hezhibao</div>
+    <p><span class="stat"><strong>血量：</strong>5</span><span class="stat"><strong>伤害：</strong>火焰弹持续燃烧 3 游戏刻 / 近战 2</span><span class="stat"><strong>类型：</strong>敌对生物</span></p>
+    <p class="label">命名空间名：chest:blaze</p>
+    <h3>射火焰弹范围</h3>
+    <div class="range-grid">
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+      <div class="g">可</div><div class="g">[B]</div><div class="g">可</div>
+      <div class="r">不可</div><div class="g">可</div><div class="r">不可</div>
+    </div>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody><tr><td>末地钥匙</td><td>10%</td><td>0~1</td></tr></tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody><tr><td>Alpha 0.8.3</td><td>加入烈焰人 [B]。</td></tr></tbody></table>
+  </div>
+</main>
+</body>
+</html>

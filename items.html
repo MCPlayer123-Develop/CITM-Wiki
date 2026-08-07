@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物品 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:1000px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:22px;color:#1a1a2e;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content p{line-height:1.8;margin-bottom:12px;color:#555}
+table{width:100%;border-collapse:collapse;margin:12px 0 20px;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+th{background:#1a1a2e;color:#fff;padding:10px 14px;font-size:13px;text-align:left;font-weight:normal}
+td{padding:10px 14px;font-size:13px;border-bottom:1px solid #eee}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#f8f9fc}
+.tag{display:inline-block;background:#e94560;color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;margin-left:6px}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html" class="active">物品</a>
+    <a href="mobs.html">生物</a>
+    <a href="achievements.html">成就</a>
+    <a href="tutorial.html">教程</a>
+    <a href="commands.html">命令</a>
+    <a href="biomes.html">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>物品</h1>
+  <p>物品（Item）是本游戏最基础的组成部分，每个物品功能不同。</p>
+  <p style="font-size:13px;color:#999">物品 ID 格式为 chest:&lt;名称&gt;，方括号内标注首次引入版本。</p>
+
+  <h2>主世界物品</h2>
+  <table>
+    <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>描述</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td>圆石</td><td>chest:cobblestone</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>1</td></tr>
+      <tr><td>煤炭</td><td>chest:coal</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>5</td></tr>
+      <tr><td>铁锭</td><td>chest:iron_ingot</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>100</td></tr>
+      <tr><td>金锭</td><td>chest:gold_ingot</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到 / 熔岩僵尸掉落，用于在商店交易</td><td>100</td></tr>
+      <tr><td>红石</td><td>chest:redstone</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>200</td></tr>
+      <tr><td>青金石</td><td>chest:lapis_lazuli</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>300</td></tr>
+      <tr><td>绿宝石</td><td>chest:emerald</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>1000</td></tr>
+      <tr><td>钻石</td><td>chest:diamond</td><td>Alpha 0.1.1</td><td>可在主世界箱子中找到，用于在商店交易</td><td>5000</td></tr>
+      <tr><td>打火石</td><td>chest:flint_and_steel</td><td>Alpha 0.8.1</td><td>可在主世界箱子中找到，用于激活下界传送门</td><td>-</td></tr>
+    </tbody>
+  </table>
+
+  <h2>商店交易物品</h2>
+  <table>
+    <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>描述</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td>末影珍珠</td><td>chest:ender_pearl</td><td>Alpha 0.3.1</td><td>可将玩家传送到 9x9 范围，可在商店交易获得</td><td>100,000</td></tr>
+      <tr><td>治疗药水</td><td>chest:potion_of_healing</td><td>Alpha 0.3.1</td><td>可将玩家恢复至满血，可在商店交易获得</td><td>500,000</td></tr>
+      <tr><td>喷溅型伤害药水</td><td>chest:splash_potion_of_harming</td><td>Alpha 0.3.1</td><td>可杀死附近 5x5 范围的怪物，可在商店交易获得</td><td>300,000</td></tr>
+      <tr><td>面包</td><td>chest:bread</td><td>Alpha 0.6.4</td><td>可在商店交易获得</td><td>10</td></tr>
+    </tbody>
+  </table>
+
+  <h2>下界物品</h2>
+  <table>
+    <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>描述</th><th>价值</th></tr></thead>
+    <tbody>
+      <tr><td>下界石英</td><td>chest:nether_quartz</td><td>Alpha 0.8.1</td><td>可在下界箱子中找到，用于在商店交易</td><td>100,000</td></tr>
+      <tr><td>萤石</td><td>chest:glowstone</td><td>Alpha 0.8.1</td><td>可在下界箱子中找到，用于在商店交易</td><td>200,000</td></tr>
+      <tr><td>末地钥匙</td><td>chest:end_key</td><td>Alpha 0.8.3</td><td>击败烈焰人有 10% 概率掉落</td><td>-</td></tr>
+    </tbody>
+  </table>
+
+  <h2>掉落物</h2>
+  <table>
+    <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>来源</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>腐肉</td><td>chest:rotten_flesh</td><td>Alpha 0.5.1</td><td>僵尸 / 熔岩僵尸掉落</td><td>补充饱食度</td></tr>
+      <tr><td>骨头</td><td>chest:bone</td><td>Alpha 0.6.4</td><td>骷髅 / 燃烧骷髅掉落</td><td>-</td></tr>
+    </tbody>
+  </table>
+
+  <h2>录音带</h2>
+  <table>
+    <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>获取方式</th></tr></thead>
+    <tbody>
+      <tr><td>录音带-Happy Chests</td><td>chest:tape_happy_chests</td><td>Alpha 0.8.2</td><td>主世界箱子中找到（10% 概率），用于商店交易</td></tr>
+      <tr><td>录音带-Stressful</td><td>chest:tape_stressful</td><td>Alpha 0.8.2</td><td>主世界箱子中找到（10% 概率），用于商店交易</td></tr>
+      <tr><td>录音带-Lava Zombie</td><td>chest:tape_lava_zombie</td><td>Alpha 0.8.2</td><td>下界箱子中找到，用于商店交易</td></tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

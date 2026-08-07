@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教程 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:900px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:20px;color:#e94560;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content p{line-height:1.8;margin-bottom:10px}
+.key-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0}
+.key-card{background:#fff;border-radius:8px;padding:16px 20px;box-shadow:0 2px 8px rgba(0,0,0,.06);display:flex;align-items:center;gap:16px}
+.key-card .key{font-size:20px;font-weight:bold;color:#e94560;font-family:"Courier New",monospace;background:#f0f0f5;padding:8px 14px;border-radius:6px;min-width:48px;text-align:center}
+.key-card .desc h4{font-size:14px;color:#1a1a2e}
+.key-card .desc p{font-size:13px;color:#777;margin:0}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html">物品</a>
+    <a href="mobs.html">生物</a>
+    <a href="achievements.html">成就</a>
+    <a href="tutorial.html" class="active">教程</a>
+    <a href="commands.html">命令</a>
+    <a href="biomes.html">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>教程</h1>
+  <p>以下是游戏的基本操作说明。</p>
+
+  <h2>移动</h2>
+  <div class="key-grid">
+    <div class="key-card"><div class="key">W</div><div class="desc"><h4>向上移动</h4></div></div>
+    <div class="key-card"><div class="key">S</div><div class="desc"><h4>向下移动</h4></div></div>
+    <div class="key-card"><div class="key">A</div><div class="desc"><h4>向左移动</h4></div></div>
+    <div class="key-card"><div class="key">D</div><div class="desc"><h4>向右移动</h4></div></div>
+  </div>
+
+  <h2>交互</h2>
+  <div class="key-grid">
+    <div class="key-card"><div class="key">O</div><div class="desc"><h4>打开箱子</h4><p>打开上一移动方向的箱子</p></div></div>
+    <div class="key-card"><div class="key">K</div><div class="desc"><h4>攻击</h4><p>攻击四周的怪物</p></div></div>
+    <div class="key-card"><div class="key">E</div><div class="desc"><h4>打开背包</h4></div></div>
+    <div class="key-card"><div class="key">U</div><div class="desc"><h4>使用道具</h4></div></div>
+  </div>
+
+  <h2>其他</h2>
+  <div class="key-grid">
+    <div class="key-card"><div class="key">Q</div><div class="desc"><h4>吃东西</h4><p>补充饱食度</p></div></div>
+    <div class="key-card"><div class="key">R</div><div class="desc"><h4>退出</h4><p>退出当前游戏</p></div></div>
+    <div class="key-card" style="grid-column:1/-1"><div class="key">T</div><div class="desc"><h4>查看教程</h4></div></div>
+  </div>
+</main>
+</body>
+</html>

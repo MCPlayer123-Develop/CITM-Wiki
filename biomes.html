@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物群系 - CHESTS IN THE MAPS Wiki</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-height:100vh;background:#f5f6fa;color:#333}
+.sidebar{width:240px;background:#1a1a2e;color:#eee;padding:20px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}
+.sidebar h2{padding:0 20px 16px;font-size:18px;border-bottom:1px solid #333;margin-bottom:8px;color:#e94560}
+.sidebar h2 small{display:block;font-size:11px;color:#888;font-weight:normal;margin-top:2px}
+.sidebar nav a{display:block;padding:10px 20px;color:#ccc;text-decoration:none;font-size:14px;transition:background .2s}
+.sidebar nav a:hover,.sidebar nav a.active{background:#16213e;color:#fff;border-left:3px solid #e94560}
+.content{margin-left:240px;padding:32px 40px;max-width:900px;width:100%}
+.content h1{font-size:28px;color:#1a1a2e;margin-bottom:8px}
+.content h2{font-size:20px;color:#e94560;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid #e94560}
+.content p{line-height:1.8;margin-bottom:10px;color:#555}
+.biome-card{background:#fff;border-radius:8px;padding:24px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #4caf50}
+.biome-card.nether{border-left-color:#e53935}
+.biome-card.fortress{border-left-color:#ff9800}
+.biome-card h3{font-size:18px;color:#1a1a2e;margin-bottom:4px}
+.biome-card .ns{font-size:12px;color:#999;font-family:"Courier New",monospace;margin-bottom:10px}
+.biome-card ul{margin:8px 0;padding-left:20px}
+.biome-card ul li{line-height:1.8;font-size:14px}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>CHESTS IN THE MAPS<small>中文 Wiki</small></h2>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="items.html">物品</a>
+    <a href="mobs.html">生物</a>
+    <a href="achievements.html">成就</a>
+    <a href="tutorial.html">教程</a>
+    <a href="commands.html">命令</a>
+    <a href="biomes.html" class="active">生物群系</a>
+    <a href="versions.html">版本记录</a>
+  </nav>
+</aside>
+<main class="content">
+  <h1>生物群系</h1>
+  <p>生物群系（Biome Fest）决定了生物及方块的生成，目前一共有三种生物群系。</p>
+
+  <div class="biome-card">
+    <h3>主世界</h3>
+    <div class="ns">chest:Overworld</div>
+    <p>玩家会重生或出生在这里。</p>
+    <ul>
+      <li>主要由草方块、墙组成</li>
+      <li>会生成 地图大小/3 个僵尸，2 个骷髅</li>
+      <li>地图内分布 0 ~ 地图大小-1 个箱子</li>
+    </ul>
+  </div>
+
+  <div class="biome-card nether">
+    <h3>下界</h3>
+    <div class="ns">chest:Nether</div>
+    <p>只有下界岩组成，没有生物。</p>
+  </div>
+
+  <div class="biome-card fortress">
+    <h3>下界要塞</h3>
+    <div class="ns">chest:Nether_Fortress</div>
+    <ul>
+      <li>中间有一个下界箱子</li>
+      <li>1~2 个熔岩僵尸和 1~2 个燃烧骷髅会生成于此</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
