@@ -50,6 +50,7 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
 <main class="content">
   <h1>生物</h1>
   <p>生物（Mobs）是本游戏的重要组成部分之一，分为敌对生物和友好生物（目前未加入，后续加入）。</p>
+  <p style="font-size:13px;color:#999">Alpha 0.9.1 起，每个生物实例新增 <strong>hostile</strong> 参数（MobData.hostile），用于记录该生物是否已被激怒；同版本还修复了敌对生物寻路 AI（hostile_mobs_find_way）在地图值为 1~4（chest:dirt，即泥土 / 圆石等可通行方块）上被异常堵塞的漏洞。</p>
 
   <!-- 僵尸 -->
   <div class="mob-card">
@@ -123,6 +124,7 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
     <tbody>
       <tr><td>Alpha 0.8.1</td><td>加入熔岩僵尸 [Z]。</td></tr>
       <tr><td>Alpha 0.8.2</td><td>修复熔岩僵尸移动会覆盖下界岩的 Bug。</td></tr>
+      <tr><td>Alpha 0.9.1</td><td>侦测范围由 5 格调整为 min(地图大小/3, 2) 格。</td></tr>
     </tbody></table>
   </div>
 
@@ -146,7 +148,10 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
     </tbody></table>
     <h3>历史</h3>
     <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
-    <tbody><tr><td>Alpha 0.8.2</td><td>加入燃烧骷髅 [S]。</td></tr></tbody></table>
+    <tbody>
+      <tr><td>Alpha 0.8.2</td><td>加入燃烧骷髅 [S]。</td></tr>
+      <tr><td>Alpha 0.9.1</td><td>侦测范围由 5 格调整为 min(地图大小/3, 2) 格。</td></tr>
+    </tbody></table>
   </div>
 
   <!-- 烈焰人 -->
@@ -166,7 +171,36 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
     <tbody><tr><td>末地钥匙</td><td>10%</td><td>0~1</td></tr></tbody></table>
     <h3>历史</h3>
     <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
-    <tbody><tr><td>Alpha 0.8.3</td><td>加入烈焰人 [B]。</td></tr></tbody></table>
+    <tbody>
+      <tr><td>Alpha 0.8.3</td><td>加入烈焰人 [B]。</td></tr>
+      <tr><td>Alpha 0.9.1</td><td>侦测范围由 5 格调整为 min(地图大小/3, 2) 格。</td></tr>
+    </tbody></table>
+  </div>
+
+  <!-- 末影人 -->
+  <div class="mob-card">
+    <h2>[E] 末影人 <span class="ver-tag">Alpha 0.9.1 新增</span></h2>
+    <p><span class="stat"><strong>血量：</strong>5</span><span class="stat"><strong>伤害：</strong>3~4</span><span class="stat"><strong>类型：</strong>敌对生物（激怒后）</span></p>
+    <p class="label">命名空间名：chest:enderman</p>
+    <p>仅在末地维度生成，数量为 (地图大小/4)²；也可在末地中用 /summon chest:enderman 手动生成。</p>
+    <h3>敌对机制</h3>
+    <p>生成时为非敌对状态（hostile = false）。玩家朝向的前方 6 格（0~5 格）视线内出现末影人，或玩家主动攻击它时，该末影人转为敌对并开始攻击。</p>
+    <h3>攻击范围</h3>
+    <div class="range-grid">
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+      <div class="g">可攻击</div><div class="g">[E]</div><div class="g">可攻击</div>
+      <div class="r">不可攻击</div><div class="g">可攻击</div><div class="r">不可攻击</div>
+    </div>
+    <h3>生命值显示</h3>
+    <p>末影人在地图上以 E（满血 5）、4、3、2、1 表示剩余血量，每次受到攻击依次递减。</p>
+    <h3>掉落物</h3>
+    <table class="prop-table"><thead><tr><th>物品</th><th>暴率</th><th>个数</th></tr></thead>
+    <tbody><tr><td>末影珍珠</td><td>100%</td><td>0~2</td></tr></tbody></table>
+    <h3>历史</h3>
+    <table class="prop-table"><thead><tr><th>版本</th><th>介绍</th></tr></thead>
+    <tbody>
+      <tr><td>Alpha 0.9.1</td><td>加入末影人 [E]，随末地维度一同加入，敌对状态由 MobData.hostile 记录。</td></tr>
+    </tbody></table>
   </div>
 </main>
 </body>

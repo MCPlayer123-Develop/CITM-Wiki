@@ -40,7 +40,7 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
 </aside>
 <main class="content">
   <h1>教程</h1>
-  <p>以下是游戏的基本操作说明。</p>
+  <p>以下是游戏的基本操作说明。Alpha 0.9.1 起，全部按键均可在 <strong>设置 → 按键绑定</strong> 中自定义（共 11 项，含四方向移动、菜单、攻击、开箱、背包、命令、调试、成就）。</p>
 
   <h2>移动</h2>
   <div class="key-grid">
@@ -52,18 +52,21 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
 
   <h2>交互</h2>
   <div class="key-grid">
-    <div class="key-card"><div class="key">O</div><div class="desc"><h4>打开箱子</h4><p>打开上一移动方向的箱子</p></div></div>
-    <div class="key-card"><div class="key">K</div><div class="desc"><h4>攻击</h4><p>攻击四周的怪物</p></div></div>
-    <div class="key-card"><div class="key">E</div><div class="desc"><h4>打开背包</h4></div></div>
-    <div class="key-card"><div class="key">U</div><div class="desc"><h4>使用道具</h4></div></div>
+    <div class="key-card"><div class="key">K</div><div class="desc"><h4>打开箱子 / 使用道具</h4><p>朝向前方：前方是箱子则打开箱子，否则使用道具并进食（Alpha 0.9.1 起由同一按键处理）</p></div></div>
+    <div class="key-card"><div class="key">J</div><div class="desc"><h4>攻击</h4><p>攻击四周（上下左右）的怪物</p></div></div>
+    <div class="key-card"><div class="key">E</div><div class="desc"><h4>打开背包</h4><p>查看背包内的物品</p></div></div>
+    <div class="key-card"><div class="key">Enter</div><div class="desc"><h4>游戏菜单</h4><p>打开游戏菜单，可返回标题界面</p></div></div>
   </div>
 
   <h2>其他</h2>
   <div class="key-grid">
-    <div class="key-card"><div class="key">Q</div><div class="desc"><h4>吃东西</h4><p>补充饱食度</p></div></div>
-    <div class="key-card"><div class="key">R</div><div class="desc"><h4>退出</h4><p>退出当前游戏</p></div></div>
-    <div class="key-card" style="grid-column:1/-1"><div class="key">T</div><div class="desc"><h4>查看教程</h4></div></div>
+    <div class="key-card"><div class="key">/</div><div class="desc"><h4>输入命令</h4><p>需要该世界已开启作弊</p></div></div>
+    <div class="key-card"><div class="key">1</div><div class="desc"><h4>调试信息</h4><p>显示 / 隐藏调试信息</p></div></div>
+    <div class="key-card" style="grid-column:1/-1"><div class="key">L</div><div class="desc"><h4>查看成就</h4><p>查看已获得的成就</p></div></div>
   </div>
+
+  <h2>世界管理</h2>
+  <div class="note">Alpha 0.9.1 起，在「选择世界」界面按 <strong>D</strong> 可删除选中的存档：按 <strong>1</strong> 确认删除，按 <strong>0</strong> 取消。删除会同时移除该世界的存档数据与皮肤信息，且不可恢复，请谨慎操作。</div>
 </main>
 </body>
 </html>

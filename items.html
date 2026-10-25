@@ -64,7 +64,7 @@ tr:hover td{background:#f8f9fc}
   <table>
     <thead><tr><th>物品</th><th>ID</th><th>版本</th><th>描述</th><th>价值</th></tr></thead>
     <tbody>
-      <tr><td>末影珍珠</td><td>chest:ender_pearl</td><td>Alpha 0.3.1</td><td>可将玩家传送到 9x9 范围，可在商店交易获得</td><td>100,000</td></tr>
+      <tr><td>末影珍珠</td><td>chest:ender_pearl</td><td>Alpha 0.3.1（Alpha 0.9.1 调整范围）</td><td>可将玩家传送到附近范围内，可在商店交易获得，也可由末影人掉落。Alpha 0.9.1 更新日志称传送范围调整为地图大小，本快照代码中的实际限制仍为 ±4 格（9x9）</td><td>100,000</td></tr>
       <tr><td>治疗药水</td><td>chest:potion_of_healing</td><td>Alpha 0.3.1</td><td>可将玩家恢复至满血，可在商店交易获得</td><td>500,000</td></tr>
       <tr><td>喷溅型伤害药水</td><td>chest:splash_potion_of_harming</td><td>Alpha 0.3.1</td><td>可杀死附近 5x5 范围的怪物，可在商店交易获得</td><td>300,000</td></tr>
       <tr><td>面包</td><td>chest:bread</td><td>Alpha 0.6.4</td><td>可在商店交易获得</td><td>10</td></tr>
@@ -77,7 +77,20 @@ tr:hover td{background:#f8f9fc}
     <tbody>
       <tr><td>下界石英</td><td>chest:nether_quartz</td><td>Alpha 0.8.1</td><td>可在下界箱子中找到，用于在商店交易</td><td>100,000</td></tr>
       <tr><td>萤石</td><td>chest:glowstone</td><td>Alpha 0.8.1</td><td>可在下界箱子中找到，用于在商店交易</td><td>200,000</td></tr>
-      <tr><td>末地钥匙</td><td>chest:end_key</td><td>Alpha 0.8.3</td><td>击败烈焰人有 10% 概率掉落</td><td>-</td></tr>
+      <tr><td>末地钥匙</td><td>chest:end_key</td><td>Alpha 0.8.3</td><td>击败烈焰人有 10% 概率掉落，可激活末地传送门</td><td>-</td></tr>
+    </tbody>
+  </table>
+
+  <h2>末地方块 <span class="tag">Alpha 0.9.1 新增</span></h2>
+  <p style="font-size:13px;color:#999">末地方块主要出现在末地维度，也可用命令 /setblock chest:the_end &lt;x&gt; &lt;y&gt; &lt;block&gt; 放置。</p>
+  <table>
+    <thead><tr><th>方块</th><th>ID</th><th>版本</th><th>描述</th></tr></thead>
+    <tbody>
+      <tr><td>末地石</td><td>chest:end_stone</td><td>Alpha 0.9.1</td><td>构成末地地面的主方块，可正常行走</td></tr>
+      <tr><td>虚空</td><td>chest:end_void</td><td>Alpha 0.9.1</td><td>位于末地地图边界，踩入后每回合损失 4 点血量且无法自行脱出</td></tr>
+      <tr><td>末地水晶</td><td>chest:end_crystal</td><td>Alpha 0.9.1</td><td>末地方块，当前快照中仅作为地图元素渲染，暂无其他功能</td></tr>
+      <tr><td>末影之箱</td><td>chest:ender_chest</td><td>Alpha 0.9.1</td><td>末地方块，当前快照中仅作为地图元素渲染，尚无法开启</td></tr>
+      <tr><td>黑曜石</td><td>chest:obsidian</td><td>Alpha 0.9.1</td><td>末地出生点脚下的平台方块，可正常行走</td></tr>
     </tbody>
   </table>
 
@@ -87,6 +100,7 @@ tr:hover td{background:#f8f9fc}
     <tbody>
       <tr><td>腐肉</td><td>chest:rotten_flesh</td><td>Alpha 0.5.1</td><td>僵尸 / 熔岩僵尸掉落</td><td>补充饱食度</td></tr>
       <tr><td>骨头</td><td>chest:bone</td><td>Alpha 0.6.4</td><td>骷髅 / 燃烧骷髅掉落</td><td>-</td></tr>
+      <tr><td>末影珍珠</td><td>chest:ender_pearl</td><td>Alpha 0.9.1</td><td>末影人掉落（0~2 个）</td><td>传送 / 商店交易</td></tr>
     </tbody>
   </table>
 

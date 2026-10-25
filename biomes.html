@@ -20,6 +20,7 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
 .biome-card{background:#fff;border-radius:8px;padding:24px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #4caf50}
 .biome-card.nether{border-left-color:#e53935}
 .biome-card.fortress{border-left-color:#ff9800}
+.biome-card.end{border-left-color:#7b1fa2}
 .biome-card h3{font-size:18px;color:#1a1a2e;margin-bottom:4px}
 .biome-card .ns{font-size:12px;color:#999;font-family:"Courier New",monospace;margin-bottom:10px}
 .biome-card ul{margin:8px 0;padding-left:20px}
@@ -42,7 +43,7 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
 </aside>
 <main class="content">
   <h1>生物群系</h1>
-  <p>生物群系（Biome Fest）决定了生物及方块的生成，目前一共有三种生物群系。</p>
+  <p>生物群系（Biome Fest）决定了生物及方块的生成，目前一共有四种生物群系（主世界、下界、下界要塞、末地）。</p>
 
   <div class="biome-card">
     <h3>主世界</h3>
@@ -67,6 +68,20 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
     <ul>
       <li>中间有一个下界箱子</li>
       <li>1~2 个熔岩僵尸和 1~2 个燃烧骷髅会生成于此</li>
+    </ul>
+  </div>
+
+  <div class="biome-card end">
+    <h3>末地 <span style="display:inline-block;background:#7b1fa2;color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;vertical-align:middle">Alpha 0.9.1 新增</span></h3>
+    <div class="ns">chest:the_end</div>
+    <p>终末之地，Alpha 0.9.1 新增的第三个维度。</p>
+    <ul>
+      <li>地图四周边界为虚空（末地石之外），内部全部由末地石组成</li>
+      <li>出生点在地图底边中点，脚下会留下黑曜石平台</li>
+      <li>会生成 (地图大小/4)² 个末影人（如 20×20 地图为 25 个），默认非敌对</li>
+      <li>没有箱子，也没有返回主世界的传送门，只能从游戏菜单退出</li>
+      <li>踩入虚空后每回合损失 4 点血量，且无法自行脱出</li>
+      <li>可用 /setblock chest:the_end 放置末地石、虚空、末地水晶、末影之箱、黑曜石</li>
     </ul>
   </div>
 </main>

@@ -43,15 +43,16 @@ body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;display:flex;min-hei
   <h1>命令</h1>
   <div class="quote-block">"CHESTS IN THE MAPS 最神奇的咒语。" —— hezhibao</div>
 
-  <div class="note">此页面仅适用于 C++ Edition。命令（Command）是要开启作弊从而修改游戏数据或开发的工具，目前有 7 种命令（含 1 个彩蛋）。</div>
+  <div class="note">此页面仅适用于 C++ Edition。命令（Command）是要开启作弊从而修改游戏数据或开发的工具，目前有 8 种命令（Alpha 0.9.1 已移除 eggs_mcplayer123 彩蛋，因此不再包含彩蛋命令）。</div>
 
   <h2>C++ Edition 命令</h2>
-  <div class="cmd-card"><h3>/kill</h3><p>杀死指定生物</p><span class="usage">/kill &lt;mob&gt; &lt;id/all&gt;</span></div>
+  <div class="cmd-card"><h3>/kill</h3><p>杀死指定生物。mob 可填 chest:zombie、chest:skeleton、chest:arrow、chest:lava_zombie、chest:burn_skeleton、chest:burn_arrow、chest:blaze、chest:enderman、chest:player；第二个参数填序号可清除单个个体，填 all 可清除该类型的全部个体。Alpha 0.9.1 起支持清除箭矢与火矢（chest:arrow / chest:burn_arrow）。第一参数直接填 all 会清空主世界、下界、末地的全部生物并杀死玩家，死亡信息为 "Player was killed."；/kill chest:player 也会显示该信息。</p><span class="usage">/kill &lt;mob&gt; &lt;id/all&gt;</span></div>
   <div class="cmd-card"><h3>/tp</h3><p>传送玩家</p><span class="usage">/tp &lt;x&gt; &lt;y&gt;</span></div>
   <div class="cmd-card"><h3>/give</h3><p>给予物品</p><span class="usage">/give &lt;item&gt; &lt;count&gt;</span></div>
   <div class="cmd-card"><h3>/gamerule</h3><p>设置规则</p><span class="usage">/gamerule &lt;rule&gt; &lt;value&gt;</span></div>
-  <div class="cmd-card"><h3>/setblock</h3><p>更改方块</p><span class="usage">/setblock &lt;dimension&gt; &lt;x&gt; &lt;y&gt; &lt;block&gt;</span></div>
+  <div class="cmd-card"><h3>/setblock</h3><p>更改方块。维度可选 chest:overworld、chest:nether、chest:the_end（末地为 Alpha 0.9.1 新增）；末地方块可用 chest:end_stone、chest:end_void、chest:end_crystal、chest:ender_chest、chest:obsidian。</p><span class="usage">/setblock &lt;dimension&gt; &lt;x&gt; &lt;y&gt; &lt;block&gt;</span></div>
   <div class="cmd-card"><h3>/gamemode</h3><p>设置游戏模式</p><span class="usage">/gamemode &lt;mode&gt;</span></div>
+  <div class="cmd-card"><h3>/summon <span style="display:inline-block;background:#e94560;color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;margin-left:6px">Alpha 0.9.1</span></h3><p>在指定坐标生成一只生物，并指定其初始血量、朝向与敌对状态。生物可填 chest:zombie、chest:skeleton、chest:arrow、chest:lava_zombie、chest:burn_skeleton、chest:burn_arrow、chest:enderman；hostile 填 true 时生成即处于敌对状态，主要用于测试与调试。</p><span class="usage">/summon &lt;mob&gt; &lt;x&gt; &lt;y&gt; &lt;health&gt; &lt;facing&gt; &lt;hostile&gt;</span></div>
   <div class="cmd-card"><h3>/help</h3><p>帮助</p><span class="usage">/help</span></div>
 
   <h2>Canary Version 命令</h2>
